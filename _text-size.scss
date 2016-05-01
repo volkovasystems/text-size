@@ -1,0 +1,159 @@
+html {
+	font-size: 19.416407865px;
+}
+
+.text {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	box-sizing: border-box !important;
+
+	text-rendering: geometricPrecision !important;
+
+	padding: 0.1em;
+}
+
+@mixin normal-text {
+	font-size: 1rem !important;
+}
+.text.normal {
+	@include normal-text;
+}
+
+@mixin huge-text {
+	font-size: 5em !important;
+}
+.text.huge {
+	@include huge-text;
+}
+
+@mixin large-text {
+	font-size: 3em !important;
+}
+.text.large {
+	@include large-text;
+}
+
+@mixin small-text {
+	font-size: 0.7em !important;
+}
+.text.small {
+	@include small-text;
+}
+
+@mixin tiny-text {
+	font-size: 0.5em !important;
+}
+.text.tiny {
+	@include tiny-text;
+}
+
+
+@mixin text-in-text {
+	font-size: 1em !important;
+}
+.text.huge .text.huge,
+.text.large .text.large,
+.text.normal .text.normal,
+.text.small .text.small,
+.text.tiny .text.tiny {
+	@include text-in-text;
+}
+
+@mixin large-text-in-huge-text {
+	font-size: 0.5em !important;
+}
+.text.huge .text.large {
+	@include large-text-in-huge-text;
+}
+
+@mixin normal-text-in-huge-text {
+	font-size: 0.3em !important;
+}
+.text.huge .text.normal{
+	@include normal-text-in-huge-text;
+}
+
+@mixin small-text-in-huge-text {
+	font-size: 0.2em !important;
+}
+.text.huge .text.small{
+	@include small-text-in-huge-text;
+}
+
+@mixin tiny-text-in-huge-text {
+	font-size: 0.17em !important;
+}
+.text.huge .text.tiny {
+	@include tiny-text-in-huge-text;
+}
+
+@mixin normal-text-in-large-text {
+	font-size: 0.5em !important;
+}
+.text.large .text.normal {
+	@include normal-text-in-large-text;
+}
+
+@mixin small-text-in-large-text {
+	font-size: 0.3em !important;
+}
+.text.large .text.small {
+	@include small-text-in-large-text;
+}
+
+@mixin tiny-text-in-large-text {
+	font-size: 0.2em !important;
+	letter-spacing: 0.007em !important;
+}
+.text.large .text.tiny {
+	@include tiny-text-in-large-text;
+}
+
+@mixin small-text-in-normal-text {
+	font-size: 0.7em !important;
+	letter-spacing: 0.01em !important;
+}
+.text.normal .text.small{
+	@include small-text-in-normal-text;
+}
+
+@mixin tiny-text-in-normal-text {
+	font-size: 0.5em !important;
+	letter-spacing: 0.03em !important;
+}
+.text.normal .text.tiny {
+	@include tiny-text-in-normal-text;
+}
+
+@mixin tiny-text-in-small-text {
+	font-size: 0.7em !important;
+	letter-spacing: 0.03em !important;
+}
+.text.small .text.tiny {
+	@include tiny-text-in-small-text;
+}
+
+@mixin small-text-in-big-text {
+	opacity: 0.75 !important;
+}
+.text.huge + .text.large,
+.text.large + .text.normal,
+.text.normal + .text.small,
+.text.small + .text.tiny {
+	@include small-text-in-big-text;
+}
+
+@mixin leaf-text-in-any-text {
+	font-size: 75% !important;
+}
+.text .text.leaf {
+	@include leaf-text-in-any-text;
+}
+
+@mixin leaf-text-in-leaf-text {
+	letter-spacing: 0.007em !important
+}
+.text.leaf .text.leaf {
+	@include  leaf-text-in-leaf-text;
+}

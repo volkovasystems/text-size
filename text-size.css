@@ -1,0 +1,77 @@
+html {
+  font-size: 19.416407865px; }
+
+.text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box !important;
+  text-rendering: geometricPrecision !important;
+  padding: 0.1em; }
+
+.text.normal {
+  font-size: 1rem !important; }
+
+.text.huge {
+  font-size: 5em !important; }
+
+.text.large {
+  font-size: 3em !important; }
+
+.text.small {
+  font-size: 0.7em !important; }
+
+.text.tiny {
+  font-size: 0.5em !important; }
+
+.text.huge .text.huge,
+.text.large .text.large,
+.text.normal .text.normal,
+.text.small .text.small,
+.text.tiny .text.tiny {
+  font-size: 1em !important; }
+
+.text.huge .text.large {
+  font-size: 0.5em !important; }
+
+.text.huge .text.normal {
+  font-size: 0.3em !important; }
+
+.text.huge .text.small {
+  font-size: 0.2em !important; }
+
+.text.huge .text.tiny {
+  font-size: 0.17em !important; }
+
+.text.large .text.normal {
+  font-size: 0.5em !important; }
+
+.text.large .text.small {
+  font-size: 0.3em !important; }
+
+.text.large .text.tiny {
+  font-size: 0.2em !important;
+  letter-spacing: 0.007em !important; }
+
+.text.normal .text.small {
+  font-size: 0.7em !important;
+  letter-spacing: 0.01em !important; }
+
+.text.normal .text.tiny {
+  font-size: 0.5em !important;
+  letter-spacing: 0.03em !important; }
+
+.text.small .text.tiny {
+  font-size: 0.7em !important;
+  letter-spacing: 0.03em !important; }
+
+.text.huge + .text.large,
+.text.large + .text.normal,
+.text.normal + .text.small,
+.text.small + .text.tiny {
+  opacity: 0.75 !important; }
+
+.text .text.leaf {
+  font-size: 75% !important; }
+
+.text.leaf .text.leaf {
+  letter-spacing: 0.007em !important; }

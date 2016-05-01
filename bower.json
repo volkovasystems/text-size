@@ -1,0 +1,23 @@
+{
+  "name": "text-size",
+  "homepage": "https://github.com/volkovasystems/text-size",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "description": "Text size style dictator.",
+  "main": "",
+  "keywords": [
+    "text-size",
+    "sass",
+    "css",
+    "style"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
